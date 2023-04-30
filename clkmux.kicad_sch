@@ -844,7 +844,7 @@
     (uuid 4618914f-ff01-4015-87b9-9dd130be4135)
     (property "Reference" "J7" (id 0) (at 60.0074 72.39 0))
     (property "Value" "Conn_Coaxial" (id 1) (at 60.0074 74.93 0))
-    (property "Footprint" "Connector_Coaxial:BNC_TEConnectivity_1478035_Horizontal" (id 2) (at 59.69 80.01 0)
+    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" (id 2) (at 59.69 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 59.69 80.01 0)
