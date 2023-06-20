@@ -100,7 +100,7 @@
         (name "VDD" (effects (font (size 1.27 1.27))))
         (number "116" (effects (font (size 1.27 1.27))))
       )
-      (pin power_in line (at 55.88 5.08 270) (length 5.08)
+      (pin output line (at 55.88 5.08 270) (length 5.08)
         (name "VC" (effects (font (size 1.27 1.27))))
         (number "117" (effects (font (size 1.27 1.27))))
       )
