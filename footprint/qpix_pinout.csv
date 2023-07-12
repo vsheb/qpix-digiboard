@@ -1,126 +1,126 @@
-Pin,Type,Name,Side,X,Y
-1,       input,          Reset15_P,        left,      0,      4530 
-2,       input,          Reset15_N,        left,      0,      4440
-3,       power_in,       VDD,              left,      0,      4350
-4,       input,          Reset14_P,        left,      0,      4260
-5,       input,          Reset14_N,        left,      0,      4170
-6,       power_in,       GND,              left,      0,      4080
-7,       input,          Reset13_P,        left,      0,      3990
-8,       input,          Reset13_N,        left,      0,      3900
-9,       power_in,       VDD,              left,      0,      3810
-10,      input,          Reset12_P,        left,      0,      3720
-11,      input,          Reset12_N,        left,      0,      3630
-12,      power_in,       GND,              left,      0,      3540
-13,      input,          Reset11_P,        left,      0,      3450
-14,      input,          Reset11_N,        left,      0,      3360
-15,      power_in,       VDD,              left,      0,      3270
-16,      input,          Reset10_P,        left,      0,      3180
-17,      input,          Reset10_N,        left,      0,      3090
-18,      power_in,       GND,              left,      0,      3000
-19,      input,          Reset9_P,         left,      0,      2910
-20,      input,          Reset9_N,         left,      0,      2820
-21,      power_in,       VDD,              left,      0,      2730
-22,      input,          Reset8_P,         left,      0,      2640
-23,      input,          Reset8_N,         left,      0,      2550
-24,      power_in,       GND,              left,      0,      2460
-25,      input,          Reset7P,          left,      0,      2370
-26,      input,          Reset7_N,         left,      0,      2280
-27,      power_in,       VDD,              left,      0,      2190
-28,      input,          Reset6_P,         left,      0,      2100
-29,      input,          Reset6_N,         left,      0,      2010
-30,      power_in,       GND,              left,      0,      1920
-31,      input,          Reset5_P,         left,      0,      1830
-32,      input,          Reset5_N,         left,      0,      1740
-33,      power_in,       VDD,              left,      0,      1650
-34,      input,          Reset4_P,         left,      0,      1560
-35,      input,          Reset4_N,         left,      0,      1470
-36,      power_in,       GND,              left,      0,      1380
-37,      input,          Reset3_P,         left,      0,      1290
-38,      input,          Reset3_N,         left,      0,      1200
-39,      power_in,       VDD,              left,      0,      1110
-40,      input,          Reset2_P,         left,      0,      1020
-41,      input,          Reset2_N,         left,      0,      930
-42,      power_in,       GND,              left,      0,      840
-43,      input,          Reset1_P,         left,      0,      750
-44,      input,          Reset1_N,         left,      0,      660
-45,      power_in,       VDD,              left,      0,      570
-46,      input,          Reset0_P,         left,      0,      480
-47,      input,          Reset0_N,         left,      0,      390
-48,      power_in,       GND,              left,      0,      300
-49,      power_in,       VDD,              bottom,    390,    0    
-50,      power_in,       GND,              bottom,    480,    0
-51,      input,          Datin_A_P,        bottom,    660,    0
-52,      input,          Datin_A_N,        bottom,    750,    0
-53,      input,          Datout_A_N,       bottom,    1020,   0
-54,      input,          Datout_A_P,       bottom,    1200,   0
-55,      power_in,       VDD,              bottom,    1380,   0
-56,      power_in,       GND,              bottom,    1470,   0
-57,      input,          Datin_B_P,        bottom,    1560,   0
-58,      input,          Datin_B_N,        bottom,    1650,   0
-59,      power_in,       VDD,              bottom,    1740,   0
-60,      power_in,       GND,              bottom,    1830,   0
-61,      input,          Datout_B_N,       bottom,    2010,   0
-62,      input,          Datout_B_P,       bottom,    2190,   0
-63,      power_in,       VDD,              bottom,    2370,   0
-64,      power_in,       GND,              bottom,    2460,   0
-65,      power_in,       VDD,              right,     2740,   300
-66,      power_in,       GND,              right,     2740,   390
-67,      output,         dbgClkDiv,        right,     2740,   570
-68,      output,         dbgDataValid,     right,     2740,   660
-69,      power_in,       VDD,              right,     2740,   750
-70,      power_in,       GND,              right,     2740,   840
-71,      input,          extInterHard,     right,     2740,   930
-72,      input,          extInterSoft,     right,     2740,   1020
-73,      input,          EndeavourScale_2, right,     2740,   1200
-74,      input,          EndeavourScale_1, right,     2740,   1290
-75,      input,          EndeavourScale_0, right,     2740,   1380
-76,      input,          disableDbgOut,    right,     2740,   1470
-77,      power_in,          VDD,           right,     2740,   1560
-78,      power_in,          GND,           right,     2740,   1650
-79,      output,         dbgTxBusy,        right,     2740,   1740
-80,      output,         dbgRxValid,       right,     2740,   1830
-81,      output,         dbgRxError,       right,     2740,   1920
-82,      output,         dbgRxBusy,        right,     2740,   2010
-83,      output,         dbgLocFifoFull,   right,     2740,   2100
-84,      output,         dbgInterr,        right,     2740,   2190
-85,      output,         dbgFsmState_2,    right,     2740,   2280
-86,      output,         dbgFsmState_1,    right,     2740,   2370
-87,      output,         dbgFsmState_0,    right,     2740,   2460
-88,      output,         dbgExtFifoFull,   right,     2740,   2550
-89,      power_in,       VDD,              right,     2740,   2640
-90,      power_in,       GND,              right,     2740,   2730
-91,      input,          TxRxDisable_3,    right,     2740,   2820
-92,      input,          TxRxDisable_2,    right,     2740,   2910
-93,      input,          TxRxDisable_1,    right,     2740,   3000
-94,      input,          TxRxDisable_0,    right,     2740,   3090
-95,      power_in,       VDD,              right,     2740,   3180
-96,      power_in,       GND,              right,     2740,   3270
-97,      input,          DataIn_C_P,       right,     2740,   3450
-98,      input,          DataIn_C_N,       right,     2740,   3540
-99,      power_in,       VDD,              right,     2740,   3720
-100,     power_in,       GND,              right,     2740,   3810
-101,     output,         DataOutC_P,       right,     2740,   3990
-102,     output,         DataOutC_N,       right,     2740,   4170
-103,     power_in,       VDD,              right,     2740,   4350
-104,     power_in,       GND,              right,     2740,   4440
-105,     power_in,       VDD,              top,       2550,   4710
-106,     output,         DataOutD_P,       top,       2370,   4710
-107,     output,         DataOutD_N,       top,       2190,   4710
-108,     power_in,       GND,              top,       2010,   4710
-109,     input,          DataInD_P,        top,       1920,   4710
-110,     input,          DataInD_N,        top,       1830,   4710
-111,     power_in,       VDD,              top,       1740,   4710
-112,     power_in,       GND,              top,       1650,   4710
-113,     output,         CLKout_P,         top,       1470,   4710
-114,     output,         CLKout_N,         top,       1290,   4710
-115,     power_in,       GND,              top,       1110,   4710
-116,     power_in,       VDD,              top,       1020,   4710
-117,     power_in,       VC,               top,       930,    4710
-118,     input,          SR_reset,         top,       840,    4710
-119,     input,          PCLK,             top,       750,    4710
-120,     input,          SCLK,             top,       660,    4710
-121,     input,          Sin,              top,       570,    4710
-122,     input,          DigReset,         top,       480,    4710
-123,     input,          CLKdig1_P,        top,       390,    4710
-124,     input,          CLKdig1_N,        top,       300,    4710
+Pin,Type,Name,Side,X,Y,i
+1,       input,          Reset15_P,        left,      0,      4530, 1,
+2,       input,          Reset15_N,        left,      0,      4440, 2,
+3,       power_in,       VDD,              left,      0,      4350, 3,
+4,       input,          Reset14_P,        left,      0,      4260, 4,
+5,       input,          Reset14_N,        left,      0,      4170, 5,
+6,       power_in,       GND,              left,      0,      4080, 6,
+7,       input,          Reset13_P,        left,      0,      3990, 7,
+8,       input,          Reset13_N,        left,      0,      3900, 8,
+9,       power_in,       VDD,              left,      0,      3810, 9,
+10,      input,          Reset12_P,        left,      0,      3720, 10
+11,      input,          Reset12_N,        left,      0,      3630, 11
+12,      power_in,       GND,              left,      0,      3540, 12
+13,      input,          Reset11_P,        left,      0,      3450, 13
+14,      input,          Reset11_N,        left,      0,      3360, 14
+15,      power_in,       VDD,              left,      0,      3270, 15
+16,      input,          Reset10_P,        left,      0,      3180, 16
+17,      input,          Reset10_N,        left,      0,      3090, 17
+18,      power_in,       GND,              left,      0,      3000, 18
+19,      input,          Reset9_P,         left,      0,      2910, 19
+20,      input,          Reset9_N,         left,      0,      2820, 20
+21,      power_in,       VDD,              left,      0,      2730, 21
+22,      input,          Reset8_P,         left,      0,      2640, 22
+23,      input,          Reset8_N,         left,      0,      2550, 23
+24,      power_in,       GND,              left,      0,      2460, 24
+25,      input,          Reset7P,          left,      0,      2370, 25
+26,      input,          Reset7_N,         left,      0,      2280, 26
+27,      power_in,       VDD,              left,      0,      2190, 27
+28,      input,          Reset6_P,         left,      0,      2100, 28
+29,      input,          Reset6_N,         left,      0,      2010, 29
+30,      power_in,       GND,              left,      0,      1920, 30
+31,      input,          Reset5_P,         left,      0,      1830, 31
+32,      input,          Reset5_N,         left,      0,      1740, 32
+33,      power_in,       VDD,              left,      0,      1650, 33
+34,      input,          Reset4_P,         left,      0,      1560, 34
+35,      input,          Reset4_N,         left,      0,      1470, 35
+36,      power_in,       GND,              left,      0,      1380, 36
+37,      input,          Reset3_P,         left,      0,      1290, 37
+38,      input,          Reset3_N,         left,      0,      1200, 38
+39,      power_in,       VDD,              left,      0,      1110, 39
+40,      input,          Reset2_P,         left,      0,      1020, 40
+41,      input,          Reset2_N,         left,      0,      930,  41 
+42,      power_in,       GND,              left,      0,      840,  42 
+43,      input,          Reset1_P,         left,      0,      750,  43 
+44,      input,          Reset1_N,         left,      0,      660,  44 
+45,      power_in,       VDD,              left,      0,      570,  45 
+46,      input,          Reset0_P,         left,      0,      480,  46 
+47,      input,          Reset0_N,         left,      0,      390,  47 
+48,      power_in,       GND,              left,      0,      300,  48 
+49,      power_in,       VDD,              bottom,    390,    0, 2
+50,      power_in,       GND,              bottom,    480,    0, 3
+51,      input,          Datin_A_P,        bottom,    660,    0, 5
+52,      input,          Datin_A_N,        bottom,    750,    0, 6
+53,      input,          Datout_A_N,       bottom,    1020,   0, 9
+54,      input,          Datout_A_P,       bottom,    1200,   0, 11
+55,      power_in,       VDD,              bottom,    1380,   0, 13
+56,      power_in,       GND,              bottom,    1470,   0, 14
+57,      input,          Datin_B_P,        bottom,    1560,   0, 15
+58,      input,          Datin_B_N,        bottom,    1650,   0, 16
+59,      power_in,       VDD,              bottom,    1740,   0, 17
+60,      power_in,       GND,              bottom,    1830,   0, 18
+61,      input,          Datout_B_N,       bottom,    2010,   0, 20
+62,      input,          Datout_B_P,       bottom,    2190,   0, 22
+63,      power_in,       VDD,              bottom,    2370,   0, 24
+64,      power_in,       GND,              bottom,    2460,   0, 25
+65,      power_in,       VDD,              right,     2740,   300,  48
+66,      power_in,       GND,              right,     2740,   390,  47
+67,      output,         dbgClkDiv,        right,     2740,   570,  45
+68,      output,         dbgDataValid,     right,     2740,   660,  44
+69,      power_in,       VDD,              right,     2740,   750,  43
+70,      power_in,       GND,              right,     2740,   840,  42
+71,      input,          extInterHard,     right,     2740,   930,  41
+72,      input,          extInterSoft,     right,     2740,   1020, 40
+73,      input,          EndeavourScale_2, right,     2740,   1200, 38
+74,      input,          EndeavourScale_1, right,     2740,   1290, 37
+75,      input,          EndeavourScale_0, right,     2740,   1380, 36
+76,      input,          disableDbgOut,    right,     2740,   1470, 35
+77,      power_in,          VDD,           right,     2740,   1560, 34
+78,      power_in,          GND,           right,     2740,   1650, 33
+79,      output,         dbgTxBusy,        right,     2740,   1740, 32
+80,      output,         dbgRxValid,       right,     2740,   1830, 31
+81,      output,         dbgRxError,       right,     2740,   1920, 30
+82,      output,         dbgRxBusy,        right,     2740,   2010, 29
+83,      output,         dbgLocFifoFull,   right,     2740,   2100, 28
+84,      output,         dbgInterr,        right,     2740,   2190, 27
+85,      output,         dbgFsmState_2,    right,     2740,   2280, 26
+86,      output,         dbgFsmState_1,    right,     2740,   2370, 25
+87,      output,         dbgFsmState_0,    right,     2740,   2460, 24
+88,      output,         dbgExtFifoFull,   right,     2740,   2550, 23
+89,      power_in,       VDD,              right,     2740,   2640, 22
+90,      power_in,       GND,              right,     2740,   2730, 21
+91,      input,          TxRxDisable_3,    right,     2740,   2820, 20
+92,      input,          TxRxDisable_2,    right,     2740,   2910, 19
+93,      input,          TxRxDisable_1,    right,     2740,   3000, 18
+94,      input,          TxRxDisable_0,    right,     2740,   3090, 17
+95,      power_in,       VDD,              right,     2740,   3180, 16
+96,      power_in,       GND,              right,     2740,   3270, 15
+97,      input,          DataIn_C_P,       right,     2740,   3450, 13
+98,      input,          DataIn_C_N,       right,     2740,   3540, 12
+99,      power_in,       VDD,              right,     2740,   3720, 10
+100,     power_in,       GND,              right,     2740,   3810, 9
+101,     output,         DataOutC_P,       right,     2740,   3990, 7
+102,     output,         DataOutC_N,       right,     2740,   4170, 5
+103,     power_in,       VDD,              right,     2740,   4350, 3
+104,     power_in,       GND,              right,     2740,   4440, 2 
+105,     power_in,       VDD,              top,       2550,   4710, 26
+106,     output,         DataOutD_P,       top,       2370,   4710, 24
+107,     output,         DataOutD_N,       top,       2190,   4710, 22 
+108,     power_in,       GND,              top,       2010,   4710, 20
+109,     input,          DataInD_P,        top,       1920,   4710, 19
+110,     input,          DataInD_N,        top,       1830,   4710, 18
+111,     power_in,       VDD,              top,       1740,   4710, 17
+112,     power_in,       GND,              top,       1650,   4710, 16 
+113,     output,         CLKout_P,         top,       1470,   4710, 14
+114,     output,         CLKout_N,         top,       1290,   4710, 12
+115,     power_in,       GND,              top,       1110,   4710, 10
+116,     power_in,       VDD,              top,       1020,   4710, 9
+117,     power_in,       VC,               top,       930,    4710, 8
+118,     input,          SR_reset,         top,       840,    4710, 7
+119,     input,          PCLK,             top,       750,    4710, 6
+120,     input,          SCLK,             top,       660,    4710, 5
+121,     input,          Sin,              top,       570,    4710, 4
+122,     input,          DigReset,         top,       480,    4710, 3
+123,     input,          CLKdig1_P,        top,       390,    4710, 2
+124,     input,          CLKdig1_N,        top,       300,    4710, 1
 

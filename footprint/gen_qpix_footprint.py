@@ -14,11 +14,11 @@ kicad_mod.append(Text(type='reference', text='REF**', at=[0, -3], layer='F.SilkS
 kicad_mod.append(Text(type='value', text=footprint_name, at=[1.5, 3], layer='F.Fab'))
 
 
-scale = 4.0
+scale = 3.0
 xmax, xmin = 0, 0
 ymax, ymin = 0, 0
 cnt = 0
-w, l = 0.2, 0.2
+w, l = 0.2, 0.8
 
 
 with open('./qpix_pinout.csv', mode ='r') as f :
@@ -35,19 +35,19 @@ with open('./qpix_pinout.csv', mode ='r') as f :
       if y > ymax : ymax = y
     cnt += 1
 
-x_die_max = xmax
-y_die_max = ymax
-
-xmax = xmax*scale
-ymax = ymax*scale
-
-y = float(r["Y"].strip())*scale/1000.0
+x_die_max, y_die_max = xmax, ymax
+x_die_min, y_die_min = xmin, ymin
 # centering
-x0, y0 = -(xmax - xmin)/2.0, (ymax - ymin)/2.0
+x0, y0 = (xmax - xmin)/2.0, (ymax - ymin)/2.0
+
+xmax, ymax = (xmax-x0)*scale, (ymax-y0)*scale
+xmin, ymin = (xmin-x0)*scale, (ymin-y0)*scale
+
 
 
 print(x0,y0)
 print(xmax,ymax)
+print(xmin,ymin)
 
 with open('./qpix_pinout.csv', mode ='r') as f :
   reader = csv.DictReader(f)
@@ -56,32 +56,40 @@ with open('./qpix_pinout.csv', mode ='r') as f :
      
     num  = int(r["Pin"])
     name = r["Name"].strip()
-    x    = x0 + float(r["X"].strip())*scale/1000.0
-    y    = y0 - float(r["Y"].strip())*scale/1000.0
-    side = r["Side"].strip()
+    xchip = -x0 + float(r["X"].strip())/1000.0
+    ychip = -y0 + float(r["Y"].strip())/1000.0
+    xpad  = (-x0 + float(r["X"].strip())/1000.0)*scale
+    ypad  = (-y0 + float(r["Y"].strip())/1000.0)*scale
+    side  = r["Side"].strip()
 
-    if side == "top" or side == "bottom":
-      sz = [w,l]
-      angle = math.atan(x/y)*180/math.pi
-    else:
-      sz = [l,w]
-      angle = -math.atan(y/x)*180/math.pi
+    angle = -math.atan((ypad-ychip)/(xpad-xchip))*180/math.pi
+    sz = [l,w]
+    # if side == "top" or side == "bottom":
+      # sz = [w,l]
+      # # angle = math.atan((xpad-xchip)/(ypad-ychip))*180/math.pi
+    # else:
+      # sz = [l,w]
+      # # angle = -math.atan(y/x)*180/math.pi
 
   
 
-    angle = 0
+    # angle = 0
     kicad_mod.append(Pad(number=num, type=Pad.TYPE_SMT, shape=Pad.SHAPE_RECT,
                          rotation = angle,
-                         at=[x, y], size=sz, drill=0, layers=Pad.LAYERS_SMT))
+                         at=[xpad, ypad], size=sz, drill=0, layers=Pad.LAYERS_SMT))
+
+    kicad_mod.append(Line(start=[xchip, ychip], 
+                              end=[xpad, ypad], 
+                              width = 0.05, layer='F.SilkS'))
 
 x_ss, y_ss = 1, 1
 # create silscreen
-kicad_mod.append(RectLine(start=[x0+xmin-x_ss, y0-ymin+y_ss], end=[x0+xmax+x_ss, y0-ymax-y_ss], layer='F.SilkS'))
+kicad_mod.append(RectLine(start=[xmin-x_ss, ymin-y_ss], end=[xmax+x_ss, ymax+y_ss], layer='F.SilkS'))
 kicad_mod.append(RectLine(start=[-x_die_max/2, -y_die_max/2], end=[x_die_max/2, y_die_max/2], layer='F.SilkS'))
 
 x_cy, y_cy = 1.5, 1.5
 # create courtyard
-kicad_mod.append(RectLine(start=[x0+xmin-x_cy, y0-ymin+y_cy], end=[x0+xmax+x_cy, y0-ymax-y_cy], layer='F.CrtYd'))
+kicad_mod.append(RectLine(start=[xmin-x_cy, ymin-y_cy], end=[xmax+x_cy, ymax+y_cy], layer='F.CrtYd'))
 
 
 # add model
