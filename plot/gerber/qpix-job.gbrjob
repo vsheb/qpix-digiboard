@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "7.0.6-7.0.6~ubuntu20.04.1"
     },
-    "CreationDate": "2023-08-31T23:31:17+07:00"
+    "CreationDate": "2023-11-11T07:42:01+07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -62,6 +62,16 @@
       "FilePolarity": "Positive"
     },
     {
+      "Path": "qpix-F_Adhesive.gbr",
+      "FileFunction": "Glue,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "qpix-B_Adhesive.gbr",
+      "FileFunction": "Glue,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "qpix-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
@@ -92,8 +102,28 @@
       "FilePolarity": "Negative"
     },
     {
+      "Path": "qpix-User_Eco1.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "qpix-User_Eco2.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "qpix-Edge_Cuts.gbr",
       "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "qpix-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "qpix-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
       "FilePolarity": "Positive"
     }
   ],
