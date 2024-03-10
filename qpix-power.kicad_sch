@@ -1096,7 +1096,7 @@
     (property "Value" "Conn_Coaxial_Power" (at 104.14 91.6939 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x02_P7.8mm_D1.4mm_OD3.9mm" (at 100.33 90.17 0)
+    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" (at 100.33 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 100.33 90.17 0)
