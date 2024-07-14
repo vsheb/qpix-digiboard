@@ -1,2 +1,11 @@
 qpix.kicad_prl
-
+_autosave*
+*.bak
+*.kicad_sch-bak
+fp-lib-table
+replicate_layout.log
+temp-freerouting.dsn
+sym-lib-table
+qpix-backups
+fp-info-cache
+~_autosave-qpix.kicad_pcb.lck
