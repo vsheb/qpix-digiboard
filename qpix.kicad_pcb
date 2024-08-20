@@ -139,7 +139,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "plot/gerber")
+			(outputdirectory "qpix-digi-fab-2024/drill/")
 		)
 	)
 	(net 0 "")
